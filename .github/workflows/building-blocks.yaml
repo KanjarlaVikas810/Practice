@@ -1,7 +1,7 @@
 name: Building Blocks
-on: |
-  push
-  workflow_dispatch
+on: 
+  push:
+  workflow_dispatch:
 jobs:
   eccho-hello:
         runs-on: ubuntu-latest

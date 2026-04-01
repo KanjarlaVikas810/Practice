@@ -10,13 +10,14 @@ on:
 
 jobs:
   say-hello:
-    runs-on: ubuntu-Latest
+    runs-on: ubuntu-latest
     steps:
       - name: Say Hello
         run: echo "Hello"
     
   say-world:
-    runs-on: ubuntu-Latest
+    runs-on: ubuntu-latest
+    needs: say-hello
     steps:
       - name: Say World
         run: echo "World"

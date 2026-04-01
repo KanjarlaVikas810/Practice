@@ -1,0 +1,13 @@
+name: Workflow Practice 2
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  say-hi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say HI
+        run: echo "HI"
+      - name: Say BYE
+        run: echo "BYE"

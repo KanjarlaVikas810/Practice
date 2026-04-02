@@ -19,6 +19,6 @@ jobs:
           echo "Run Number: ${{ github.run_number }}"
 
       - name: Retrieve Variable
-        run: echo "The value of the variable is: ${{ env.MY_VARIABLE }}"
-        env:
-          MY_VARIABLE: "hello world"
+        run: |
+          echo "The value of the variable is: ${{ vars.MY_VARIABLE }}"
+

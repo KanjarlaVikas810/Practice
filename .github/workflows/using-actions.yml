@@ -1,0 +1,19 @@
+name: Using Actions
+
+on: 
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout out
+        uses: actions/checkout@v4
+      - name: Printing Folders
+        run: ls
+
+
+    #checkout the code
+    #install dependencies
+    #executr automated tests
+    

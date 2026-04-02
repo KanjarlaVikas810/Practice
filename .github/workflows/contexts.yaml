@@ -1,8 +1,14 @@
 name: Contexts
+run-name: Contexts | DEBUG - ${{ inputs.debug }}
 
 on:
   push:
   workflow_dispatch:
+    inputs:
+      debug:
+        type: boolean
+        defaults: false
+        description: 'Set to true to enable debug mode'
 
 jobs:
   echo-data:

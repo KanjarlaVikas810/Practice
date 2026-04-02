@@ -17,9 +17,8 @@ jobs:
           echo "Workflow: ${{ github.workflow }}"
           echo "Run Id: ${{ github.run_id }}"
           echo "Run Number: ${{ github.run_number }}"
-      
-      - name: Retreve Variable
-        run: echo "The value of the variable is: ${{ env.MY_VARIABLE }} "
+
+      - name: Retrieve Variable
+        run: echo "The value of the variable is: ${{ env.MY_VARIABLE }}"
         env:
-          My_VARIABLE: hello world
-          
+          MY_VARIABLE: "hello world"

@@ -1,19 +1,25 @@
 name: Building Blocks
 on: 
-  workflow_dispatch:
+  push:
 jobs:
   echo-ubuntu:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello ubuntu
-        run: echo "Hello, Running on Ubuntu!"
+        run: |
+          echo "Hello, Running on Ubuntu!"
+          echo "Runs on: ${{ runner.os }}"
   echo-windows:
     runs-on: windows-latest
     steps:
       - name: Say hello windows
-        run: echo "Hello, Running on Windows!"
+        run: |
+          echo "Hello, Running on Windows!"
+          echo "Runs on: ${{ runner.os }}"
   echo-macos:
     runs-on: macos-latest
     steps:
       - name: Say hello macos
-        run: echo "Hello, Running on macOS!"
+        run: |
+          echo "Hello, Running on macOS!"
+          echo "Runs on: ${{ runner.os }}"

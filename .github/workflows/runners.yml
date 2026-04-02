@@ -1,0 +1,19 @@
+name: Building Blocks
+on: 
+  workflow_dispatch:
+jobs:
+  echo-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello ubuntu
+        run: echo "Hello, Running on Ubuntu!"
+  echo-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Say hello windows
+        run: echo "Hello, Running on Windows!"
+  echo-macos:
+    runs-on: macos-latest
+    steps:
+      - name: Say hello macos
+        run: echo "Hello, Running on macOS!"

@@ -2,21 +2,16 @@ name: Building Blocks
 on: 
   workflow_dispatch:
 jobs:
-  echo-ubuntu:
+  eccho-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Say hello ubuntu
-        run: echo "Hello, Running on Ubuntu!"
-  echo-windows:
-    runs-on: windows-latest
+      - name: Say hello
+        run: echo "Hello, World!"
+  echo-goodbye:
+    runs-on: ubuntu-latest
     steps:
-      - name: Say hello windows
-        run: echo "Hello, Running on Windows!"
-  echo-macos:
-    runs-on: macos-latest
-    steps:
-      - name: Say hello macos
-        run: echo "Hello, Running on macOS!"
+      - name: Say goodbye
+        run: echo "Goodbye, World!"
        
       
 

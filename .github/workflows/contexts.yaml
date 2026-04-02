@@ -19,7 +19,7 @@ jobs:
           echo "Run Number: ${{ github.run_number }}"
       
       - name: Retreve Variable
-        run: echo "The value of the variable is: ${{ env.MY_VARIABLE }}"
+        run: echo "The value of the variable is: ${{ env.MY_VARIABLE }} "
         env:
-          My_Variable: hello world
+          My_VARIABLE: hello world
           

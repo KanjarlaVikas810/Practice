@@ -2,7 +2,6 @@ name: Using Expressions in GitHub Actions
 run-name: Uisng Expressions | DEBUG - ${{ inputs.debug && 'ON' || 'OFF' }}
 
 on:
-  push:
   workflow_dispatch:
     inputs:
       debug:
